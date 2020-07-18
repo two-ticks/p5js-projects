@@ -40,7 +40,7 @@ function setup() {
   tex1.position(0.45*width, 0.2*height);
     
   //Write KaTex script below
-  katex.render('\\huge I=\\int _{0} ^{3} \\dfrac{1}{\\sqrt{x^{2}+1}} dx  ', tex1.elt);
+  katex.render('\\huge \\int _{0} ^{3} \\dfrac{1}{\\sqrt{x^{2}+1}} dx  ', tex1.elt);
     
 }
 function integrate(x){
