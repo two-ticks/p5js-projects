@@ -11,10 +11,3 @@ To run a sketch change the following code present in index.html file.
 <!--this will run sketch_name.js -->
 ```
 
-- [x] Try1!
-- [ ] Try2!
-> Try3! 
-## Trying all
-
-[kittu](kittu.com)
-
