@@ -1,6 +1,6 @@
 # p5js-projects
 
-This repository includes projects from manim.js, katex.js, physics.js and similar.
+This repository includes projects from p5.js, manim.js, katex.js, physics.js and similar.
 
 [Go to webpage!](https://two-ticks.github.io/p5js-projects/) 
 
