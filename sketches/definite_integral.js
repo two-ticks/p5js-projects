@@ -36,7 +36,7 @@ function setup() {
   div.position(0.1*width, 0.7*height); 
     
   tex1 = createP();
-  tex1.style('font-size', '12.5px',);
+  tex1.style('font-size', '11.5px',);
   tex1.position(0.45*width, 0.2*height);
   katex.render('\\huge I= \\int _{0} ^{3} \\dfrac{1}{\\sqrt{x^{2}+1}} dx  ', tex1.elt);
     
