@@ -10,3 +10,15 @@ To run a sketch change the following code present in index.html file.
 <script src="sketch_name.js"></script> 
 <!--this will run sketch_name.js -->
 ```
+# KaTex
+```javascript
+  let tex;
+  function setup() {
+  createCanvas(400, 400);                 
+  tex = createP(); 
+  tex.style('font-size', '14px',); //font-size
+  tex.position(width/2, height/2); //position
+  // Write your KaTex script below
+  katex.render('\\int _{0}^{3} x^{2}dx', tex.elt);
+  }
+```
