@@ -20,6 +20,6 @@ To run a sketch change the following code present in index.html file.
   tex.position(width/2, height/2);                   //position
   katex.render('\\int _{0}^{3} x^{2}dx', tex.elt);   //KaTex script 
   }
-  function draw() {
+  function draw() {                                  //draw function
   }
 ```
