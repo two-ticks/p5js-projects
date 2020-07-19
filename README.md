@@ -10,7 +10,7 @@ To run a sketch change the following code present in index.html file.
 <script src="sketch_name.js"></script> 
 <!--this will run sketch_name.js -->
 ```
-# KaTex
+# How to add KaTex
 ```javascript
   let tex;
   function setup() {
@@ -20,6 +20,7 @@ To run a sketch change the following code present in index.html file.
   tex.position(width/2, height/2);                   //position
   katex.render('\\int _{0}^{3} x^{2}dx', tex.elt);   //KaTex script 
   }
-  function draw() {                                  //draw function
+  function draw() {                                  
+  //draw function
   }
 ```
