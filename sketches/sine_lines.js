@@ -4,6 +4,7 @@ var slider = 0;
 function setup() {
   createCanvas(500,500);
   slider = createSlider(0, 360, 133, 1);
+  slider.position(width/10,height/10);
     amp = width/3;
 }
 function draw() {
