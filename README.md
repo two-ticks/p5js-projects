@@ -27,4 +27,4 @@ function draw() {
 }
  
 ```
-<img src="images/katex_example.jpg" width="200" />
+> <img src="images/katex_example.jpg" width="200" />
