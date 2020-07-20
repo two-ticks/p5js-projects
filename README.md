@@ -28,4 +28,6 @@ function draw() {
  
 ```
 <img src="images/katex_example.jpg" width="150" />
+# References
+* https://p5js.org/reference/
 
