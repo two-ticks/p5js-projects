@@ -24,3 +24,4 @@ function draw() {
   background(255);  
 }
 ```
+![KaTex](resources/katex_example.jpg)
