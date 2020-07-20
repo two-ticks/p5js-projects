@@ -4,7 +4,7 @@ function setup() {
   tex = createP(); 
   tex.style('font-size', '14px',);                   //font-size
   tex.position(width/2, height/2);                   //position
-  katex.render('\\int _{0}^{3} x^{2}dx', tex.elt);   //KaTex script 
+  katex.render('\\Huge F = \\Huge G \\frac{m_{1}\\cdot m_{2}}{r^{2}', tex.elt);   //KaTex script 
 }
 function draw() {  
     background(135,206,235);  
