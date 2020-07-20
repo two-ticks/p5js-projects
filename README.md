@@ -11,7 +11,7 @@ To run a sketch change the following code present in index.html file.
 <!--this will run sketch_name.js -->
 ```
 # How to add KaTex
-<img src="images/katex_example.jpg" width="108" /> 
+
 
 ```javascript
 let tex;
@@ -25,5 +25,6 @@ function setup() {
 function draw() {  
   background(255);  
 }
+ 
 ```
-
+<img src="images/katex_example.jpg" width="200" />
