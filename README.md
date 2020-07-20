@@ -12,7 +12,6 @@ To run a sketch change the following code present in index.html file.
 ```
 # How to add KaTex
 
-
 ```javascript
 let tex;
 function setup() {
@@ -28,6 +27,8 @@ function draw() {
  
 ```
 <img src="images/katex_example.jpg" width="150" />
+
 # References
+
 * https://p5js.org/reference/
 
