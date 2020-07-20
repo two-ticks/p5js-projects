@@ -27,5 +27,5 @@ function draw() {
 }
  
 ```
-### The above code will produce  <img src="images/katex_example.jpg" width="150" />
+<img src="images/katex_example.jpg" width="150" />
 
