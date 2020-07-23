@@ -32,3 +32,6 @@ function draw() {
 
 * https://p5js.org/reference/
 * https://editor.p5js.org/
+* https://katex.org/
+* https://github.com/JazonJiao/Manim.js
+
