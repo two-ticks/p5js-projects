@@ -2,7 +2,7 @@
 
 This repository includes projects from p5.js, manim.js, katex.js, physics.js and similar.
 
-[Go to webpage!](https://two-ticks.github.io/p5js-projects/) 
+[Go to webpage!](https://adisiddheshwar14.github.io/p5js-projects/) 
 
 # How to run a sketch
 To run a sketch change the following code present in index.html file.
