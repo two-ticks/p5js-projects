@@ -1,6 +1,6 @@
 # p5js-projects
 
-This repository is froked from [TwoTicks](https://github.com/two-ticks) which includes projects from p5.js, manim.js, katex.js, physics.js and similar.
+This repository is forked from [TwoTicks](https://github.com/two-ticks) which includes projects from p5.js, manim.js, katex.js, physics.js and similar.
 
 [Go to webpage!](https://adisiddheshwar14.github.io/p5js-projects/) 
 
