@@ -3,13 +3,13 @@ This repository includes projects from p5.js, manim.js, katex.js, physics.js and
 
 [Go to webpage!](https://two-ticks.github.io/p5js-projects/) 
 
-# How to run a sketch
+## How to run a sketch
 To run a sketch change the following code present in index.html file.
 ``` html
 <script src="sketch_name.js"></script> 
 <!--this will run sketch_name.js -->
 ```
-# How to add KaTex
+## How to add KaTex
 ```javascript
 let tex;
 function setup() {
@@ -26,7 +26,7 @@ function draw() {
 ```
 <img src="images/katex_example.jpg" width="150" />
 
-# References
+## References
 
 * https://p5js.org/reference/
 * https://editor.p5js.org/
