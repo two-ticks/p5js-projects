@@ -32,3 +32,7 @@ function draw() {
 * https://editor.p5js.org/
 * https://katex.org/
 * https://github.com/JazonJiao/Manim.js
+
+```math
+SE = \frac{\sigma}{\sqrt{n}}
+```
