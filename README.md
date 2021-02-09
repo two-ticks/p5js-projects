@@ -33,4 +33,3 @@ function draw() {
 * https://katex.org/
 * https://github.com/JazonJiao/Manim.js
 
-$`\sqrt{2}`$
