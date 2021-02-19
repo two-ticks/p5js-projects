@@ -4,6 +4,7 @@ let fontSize;
 let size;
 let grabbed=false;
 
+
 function setup() {
     createCanvas(400, 400); 
     fontSize = createSlider(3,50,14,0.1);
@@ -13,6 +14,7 @@ function setup() {
     katexScript.size(200,100);
     tex = createP();
     tex.position(width/5, height/3);
+ 
 }
 
 function draw() {  
@@ -20,6 +22,9 @@ function draw() {
     tex.style('font-size', fontSize.value()+'px');
     katex.render(katexScript.value(), tex.elt);
     tex.mousePressed(clicked);
+    
+    
+    
 }
 
 function clicked(){
