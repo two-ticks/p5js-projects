@@ -1,9 +1,20 @@
 var t=0;
+const capturer = new CCapture({
+framerate : 30,
+format : "webm",
+name: "movie",
+quality: 100,
+verbose: true,
+});
+let p5Canvas;
+
 function setup() {
-  createCanvas(400, 400);
+  p5Canvas = createCanvas(400, 400);
+  frameRate(30);
 }
 
 function draw() {
+  if (frameCount === 1) capturer.start();
   background(220);
   t+=0.03;
   translate(width/2,height/2);
@@ -19,6 +30,12 @@ for (var a=0;a<=20;a++)
   rotate(a*PI/10);
 }
 
+capturer.capture(p5Canvas.canvas);
+if (frameCount === 300){
+  noLoop();
+  capturer.stop();
+  capturer.save();
+}
 }
 
 function waves (){
