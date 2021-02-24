@@ -1,9 +1,24 @@
+//CCapture
+const capturer = new CCapture({
+  framerate : 30,
+  format : "webm",
+  name: "movie",
+  quality: 100,
+  verbose: true,
+  });
+
+  let p5Canvas;
+  
+
 function setup() {
-  createCanvas(1300, 600);
+  p5Canvas = createCanvas(1300, 600);
   frameRate(70);
+  
 }
 
 function draw() {
+  if (frameCount === 1) capturer.start();
+
   background(50);
   
   push();
@@ -134,6 +149,14 @@ function draw() {
     pop();
   }
   
+//saving after specified frames
+capturer.capture(p5Canvas.canvas);
+if (frameCount === 1)  //frame to stop
+{
+  noLoop();
+  capturer.stop();
+  capturer.save();
+}
 }
 
 function graph() {
