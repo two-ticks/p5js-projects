@@ -3,6 +3,7 @@ This repository includes projects from p5.js, manim.js, katex.js, physics.js and
 
 [Go to webpage!](https://two-ticks.github.io/p5js-projects/) 
 
+[katex editor!](https://two-ticks.github.io/p5js-projects/katex-editor.html) 
 ## How to run a sketch
 To run a sketch change the following code present in index.html file.
 ``` html
