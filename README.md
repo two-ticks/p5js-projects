@@ -1,6 +1,10 @@
 # p5js-projects
 This repository includes projects from p5.js, manim.js, katex.js, physics.js and similar.
 
+<img src="images/integral_example.gif" width="350" />
+<img src="images/crank_shaft.gif" width="500" /> 
+
+
 [Go to webpage!](https://two-ticks.github.io/p5js-projects/) 
 
 [katex editor!](https://two-ticks.github.io/p5js-projects/katex-editor.html) 
