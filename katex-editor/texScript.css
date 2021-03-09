@@ -1,0 +1,16 @@
+#texScript{
+  height:520px;    
+  width: 250px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+@media screen and (max-width:10px){
+    #texScript {
+        width: 100%;
+        margin-top : 0;
+    }
+}

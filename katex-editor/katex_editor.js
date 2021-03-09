@@ -3,44 +3,67 @@ let katexScript;
 let fontSize;
 let size;
 let grabbed=false;
+var offsetX=0,offsetY=0;
+var currX,currY;
 
-//CCapture
-const capturer = new CCapture({
-    framerate : 30,
-    format : "png",
-    name: "movie",
-    quality: 100,
-    verbose: true,
-    });
-  
-    let p5Canvas;
+let p5Canvas;
     
 
 function setup() {
-    p5Canvas = createCanvas(400, 400); 
-    fontSize = createSlider(3,50,14,0.1);
-    fontSize.position(width*2/3,height);
-    katexScript = createInput('\\Huge F = \\Huge G \\frac{m_{1}\\cdot{m_{2}}}{r^{2}}');
-    katexScript.position(0,height);
-    katexScript.size(200,100);
-    tex = createP();
-    tex.position(width/5, height/3);
     
-    button = createButton('click me');
-  button.position(19, 19);
-  button.mousePressed(save_cnv);
+    p5Canvas = createCanvas(1000, 520); 
+    //frameRate(25);
+    fontSize = createSlider(10,98,44,0.1);
+    fontSize.position(width*2/3,height);
+    //katexScript = createInput('\\Huge F = \\Huge G \\frac{m_{1}\\cdot{m_{2}}}{r^{2}}');
+    //katexScript.position(width,0);
+    //katexScript.size(width/4,height);
+    //katexScript.id('texScript');
+    
+    //katexScript.style("max-width:", 600px, ")");
+    currX=width/1.75;
+    currY=height/3;
+    tex = createP();
+    tex.position(currX, currY);
+    
+    //button = createButton('click me');
+  //button.position(19, 19);
+  //button.mousePressed(save_cnv);
 }
 
+
+
 function draw() {  
-    if (frameCount === 1) capturer.start();
+   // if (frameCount === 1) capturer.start();
     background(155);
-    tex.style('font-size', fontSize.value()+'px');
-    katex.render(katexScript.value(), tex.elt);
-    tex.mousePressed(clicked); 
+    //console.log(document.getElementById("texScript").value);
+    var textarea = document.getElementById('texScript');
+    try {
+        tex.style('font-size', fontSize.value()+'px');
+        //katex.render(katexScript.value(), tex.elt);
+        katex.render(textarea.value, tex.elt);
+        tex.mousePressed(clicked);
+    }
+    catch (error){
+        textSize(32);
+        fill(0, 102, 153);
+        text("Syntax Error!", width/2, height/2);
+        textAlign(CENTER, CENTER);
+        
+        //text('word', 10, 60);
+        console.log("Syntax Error!");
+    }
+    
+    updateTexLocation();
+     //console.log(tex.position().x);
+    
 }
 
 function clicked(){
     grabbed=true;
+    offsetX = tex.position().x - mouseX;
+    offsetY = tex.position().y - mouseY;
+    tex.style("user-select", "none");
 }
 
 function mouseReleased(){
@@ -49,20 +72,15 @@ function mouseReleased(){
 function mouseDragged(){
     if((grabbed==true)&&(mouseX<=width && mouseY<=height))
     {
+       currX = mouseX+offsetX;
+       currY = mouseY+offsetY;    
        
-       tex.position(pmouseX, pmouseY);
-       
+       console.log(tex.size().width);
     }
     
 }
 
-function save_cnv(){
-//saving after specified frames
-capturer.capture(p5Canvas.canvas);
-//if (frameCount === 1)  //frame to stop
-//{
-  //noLoop();
-  capturer.stop();
-  capturer.save();
-//}
+function updateTexLocation(){
+    tex.position(currX,currY);
 }
+
