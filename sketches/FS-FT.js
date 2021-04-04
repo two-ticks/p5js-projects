@@ -15,6 +15,10 @@ function setup() {
     slider = createSlider(1, 15, 1, 0.1);
     slider.position(0.1*width, 0.5*height);
 
+    speed = createSlider(0.001, 2, 0.005, 0.001);
+    speed.position(0.1*width, 0.65*height);
+
+
     cn = createP(); 
     cn.style('font-size', '18px',);                                                 //font-size
     cn.position(0.075*width, 0.475*height);
@@ -26,14 +30,18 @@ function setup() {
     tex.position(width*0.4, height*2/5);
     
 
-   checkbox = createCheckbox('Animate', true);
-   checkbox.position(0.075*width, 0.575*height);
+   checkbox = createCheckbox('Animate', false);
+   checkbox.position(0.1*width, 0.575*height);
   }
   
 function draw() {
     background(50,20,150);
-    noFill();
-
+    fill(0); 
+    noStroke();
+    textSize(17);
+    textAlign(CENTER, CENTER);
+    text('Speed', 0.075*width, 0.665*height);
+    
     T_p = slider.value();
     if(T<T_p)
     {
@@ -41,11 +49,12 @@ function draw() {
     }
     if(checkbox.checked())
     {
-      T+=0.05;
+      T+=speed.value();
     }
     stroke(255);
     //graph
     push();
+    
     translate(0, -0.25*height);
     graph();
     pop();
@@ -56,7 +65,7 @@ function draw() {
     pop();
     //sinc
     push ();
-
+    noFill();
     translate(0.5 * width, 0.75*height);
     scale(0.5);
     stroke(250,20,50);
@@ -73,6 +82,7 @@ function draw() {
        
         //coeff
         push ();
+        noFill();
         translate(0.5 * width, 0.75*height);
         scale(0.5);
         
@@ -126,6 +136,7 @@ function draw() {
   }
 
   function graph() {
+    noFill();
     stroke(255);
     strokeWeight(0.5);
 
@@ -152,6 +163,7 @@ function ppf(){
       //ppf
       
       push ();
+      noFill();
       translate(0.5 * width, 0.25*height);
       scale(0.5);
       stroke(250,20,50);
