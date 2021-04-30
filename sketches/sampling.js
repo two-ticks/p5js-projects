@@ -1,11 +1,11 @@
 //CCapture
-const capturer = new CCapture({
-  framerate : 30,
-  format : "webm",
-  name: "movie",
-  quality: 100,
-  verbose: true,
-  });
+// const capturer = new CCapture({
+//   framerate : 30,
+//   format : "webm",
+//   name: "movie",
+//   quality: 100,
+//   verbose: true,
+//   });
 
   let p5Canvas;
   
@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  if (frameCount === 1) capturer.start();
+  //if (frameCount === 1) capturer.start();
 
   background(50);
   
@@ -150,13 +150,13 @@ function draw() {
   }
   
 //saving after specified frames
-capturer.capture(p5Canvas.canvas);
-if (frameCount === 1)  //frame to stop
-{
-  noLoop();
-  capturer.stop();
-  capturer.save();
-}
+// capturer.capture(p5Canvas.canvas);
+// if (frameCount === 1)  //frame to stop
+// {
+//   noLoop();
+//   capturer.stop();
+//   capturer.save();
+// }
 }
 
 function graph() {
