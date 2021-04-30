@@ -13,7 +13,7 @@ This repository includes projects from p5.js, manim.js, katex.js, physics.js and
 
 [multiplication_by_cosine](https://two-ticks.github.io/p5js-projects/multiplication_by_cosine)
 
-[Go to webpage!](https://two-ticks.github.io/p5js-projects/)
+[convolution](https://two-ticks.github.io/p5js-projects/convolution)
 
 [katex editor!](https://two-ticks.github.io/p5js-projects/katex-editor.html) 
 ## How to run a sketch

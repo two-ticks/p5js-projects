@@ -7,7 +7,7 @@
 //   verbose: true,
 //   });
 
-  let p5Canvas;
+let p5Canvas;
   
 
 function setup() {
