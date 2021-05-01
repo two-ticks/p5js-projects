@@ -4,6 +4,7 @@ This repository includes projects from p5.js, manim.js, katex.js, physics.js and
 <img src="images/integral_example.gif" width="350" />
 <img src="images/crank_shaft.gif" width="500" /> 
 
+[katex editor!](https://two-ticks.github.io/p5js-projects/katex-editor.html) 
 
 [Go to webpage!](https://two-ticks.github.io/p5js-projects/) 
 
@@ -15,7 +16,9 @@ This repository includes projects from p5.js, manim.js, katex.js, physics.js and
 
 [convolution](https://two-ticks.github.io/p5js-projects/convolution)
 
-[katex editor!](https://two-ticks.github.io/p5js-projects/katex-editor.html) 
+[convolution](https://two-ticks.github.io/p5js-projects/chords_epicycloid)
+
+
 ## How to run a sketch
 To run a sketch change the following code present in index.html file.
 ``` html
