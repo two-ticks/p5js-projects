@@ -4,19 +4,19 @@ This repository includes projects from p5.js, manim.js, katex.js, physics.js and
 <img src="images/integral_example.gif" width="350" />
 <img src="images/crank_shaft.gif" width="500" /> 
 
-[katex editor!](https://two-ticks.github.io/p5js-projects/katex-editor.html) 
-
 [Go to webpage!](https://two-ticks.github.io/p5js-projects/) 
 
-[sampling](https://two-ticks.github.io/p5js-projects/sampling)
+# Sketches
 
-[frequency_domain_shifting](https://two-ticks.github.io/p5js-projects/frequency_domain_shifting)
+- [katex editor!](https://two-ticks.github.io/p5js-projects/katex-editor.html) 
+- [sampling](https://two-ticks.github.io/p5js-projects/sampling)
+- [frequency_domain_shifting](https://two-ticks.github.io/p5js-projects/frequency_domain_shifting)
+- [multiplication_by_cosine](https://two-ticks.github.io/p5js-projects/multiplication_by_cosine)
+- [convolution](https://two-ticks.github.io/p5js-projects/convolution)
+- [chords_epicycloid](https://two-ticks.github.io/p5js-projects/chords_epicycloid)
+- [crank_shaft](https://two-ticks.github.io/p5js-projects/crank_shaft)
 
-[multiplication_by_cosine](https://two-ticks.github.io/p5js-projects/multiplication_by_cosine)
 
-[convolution](https://two-ticks.github.io/p5js-projects/convolution)
-
-[convolution](https://two-ticks.github.io/p5js-projects/chords_epicycloid)
 
 
 ## How to run a sketch
